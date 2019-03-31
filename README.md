@@ -7,12 +7,11 @@ Current msandeep.io ui and backend are bundled together, there is no proper user
 3. springboot backed with end to end test cases and maximum code coverage
 4. Better Admin UI with CKeEditor for authoring.
 5. Fully automated CI/CD with Jenkins
-6. Docker + K8 deplouyments
+6. Docker + K8 deployments
 7. shift to GCP
 8. better log managment and view functionality for errors
 9. google analytics integration
 10. comments and notification system
 11. Health check system to make sure everything is in place and notified when failed
-12. 
 
 
