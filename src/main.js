@@ -5,9 +5,11 @@ import store from './store'
 import './registerServiceWorker'
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
-
+import CKEditor from '@ckeditor/ckeditor5-vue'
 
 Vue.use(Buefy)
+Vue.use( CKEditor );
+
 Vue.config.productionTip = false
 
 new Vue({

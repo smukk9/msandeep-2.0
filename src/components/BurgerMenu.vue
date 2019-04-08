@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -14,32 +14,27 @@
       :color="color"
       :position="position"
       :is-open-new-tab="getIsOpenNewTab"
-      @process="print"
     ></quick-menu>
-
-    <section class="hero is-large showcase">
-      <h1>Hi, I'm Sandeep</h1>
-    </section>
   </div>
 </template>
 
-<script type="text/babel">
+<script>
 import quickMenu from "vue-quick-menu";
+
 export default {
-  data: function() {
+  data: function() {    
     return {
-      message: "Hi Sandeep",
       count: 4,
-      icons: ["fab fa-github", "fa fa-comment", "fa fa-code", "fa fa-envelope"],
+      icons: ["fas fa-home", "fas fa-tag","fas fa-archive", "fa fa-user"],
       list: [
-        { isLink: false },
-        { isLink: true, url: "/doo" },
-        { isLink: true, url: "/foo" },
-        { isLink: false }
+        { isLink: true, url: "/" },
+        { isLink: true, url: "/tags" },
+        { isLink: true, url: "/archive" },
+        { isLink: true, url: "/me" }
       ],
       backgroundColor: "#262626",
       color: "#ffffff",
-      position: "top-left",
+      position: "bottom-left",
       isOpenNewTab: false
     };
   },
@@ -56,26 +51,6 @@ export default {
   }
 };
 </script>
+
 <style>
-.showcase {
-  background-image: url("../assets/hero.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 20px;
-
-}
-
-.showcase h1 {
-  font-size: 70px;
-  color: #f0f8ff;
-  margin: auto;
-  line-height: 50px;
-  vertical-align: middle;
-}
 </style>

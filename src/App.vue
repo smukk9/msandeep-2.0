@@ -1,30 +1,26 @@
 <template>
   <div id="app">
-  
-    <HomeHero/>
+    <BurgerMenu></BurgerMenu>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import HomeHero from './components/HomeHero'
-
+import BurgerMenu from "@/components/BurgerMenu";
 export default {
-  name: 'App',
-  data: function () {
-  return {
-    title: "Hi Sandeep"
-  }
-},
+  name: "App",
+  data: function() {
+    return {};
+  },
   components: {
-    HomeHero
+    BurgerMenu
   }
-  
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
