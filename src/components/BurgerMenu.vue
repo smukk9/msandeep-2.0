@@ -34,7 +34,7 @@ export default {
       ],
       backgroundColor: "#262626",
       color: "#ffffff",
-      position: "bottom-left",
+      position: "bottom-right",
       isOpenNewTab: false
     };
   },
