@@ -6,11 +6,9 @@ import ArchivePage from './views/ArchivePage'
 import TagsPage from './views/TagsPage'
 import AboutPage from './views/AboutPage'
 import AdminPage from './views/admin/AdminPage'
-import AdminMenu from './views/admin/AdminMenu'
-
+import EditorPage from './views/admin/EditorPage'
 
 Vue.use(Router)
-
 export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
@@ -46,9 +44,9 @@ export default new Router({
   component: AdminPage
 },
 {
-  path: '/admin',
-  name: 'Admin',
-  component: AdminMenu
+  path: '/editor',
+  name: 'Editor',
+  component: EditorPage
 }
     
   ]
